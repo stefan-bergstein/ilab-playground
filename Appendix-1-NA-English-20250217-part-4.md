@@ -1,0 +1,23 @@
+## EXHIBIT 1.C
+
+## RED HAT DATA SERVICES AND STORAGE SUBSCRIPTIONS
+
+This Exhibit 1.C. governs your use of the Red Hat Products as described below.  References to ' Red Hat Data Services and Storage Subscriptions ' refer to both product lines.
+
+## 1. Unit of Measure and Purchasing Requirements for Red Hat Storage
+
+Table 1 sets forth the Unit of measure and Supported Use Case for various Red Hat Data Services and Storage Subscriptions.  You must purchase the appropriate number and type of these Subscriptions based on the Unit and other parameters described in Table 1 below.  In addition, the following terms apply:
+
+- (a) Red Hat Gluster Storage includes management tools to manage one or more instances of Red Hat Gluster Storage.
+- (b) Red Hat Ceph Storage Software Subscriptions are priced based on the total amount of storage capacity. Each Red Hat Ceph Storage Software Subscription supports up to a certain number of Physical Nodes or Virtual Nodes. Should the number of Physical or Virtual Nodes be consumed before the Storage Band capacity is reached, you may upgrade to the next Storage Band to receive additional Physical or Virtual Nodes.
+
+## Table 1
+
+| Red Hat Product                                         | Unit of Measure   | Supported Use Case                                                                                                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Red Hat Ceph Storage for OpenStack Platform             | Physical Node     | or Supported only when used as a storage node. These Subscriptions are not supported on non-server hardware such as desktops or workstations and are intended for use on a dedicated Physical Node; running other applications and/or programs of any type on the Physical Node can have a negative impact on the                                                                 |
+| Red Hat Ceph Storage for OpenShift Container Platform   | and Storage Band  | Software Subscription to Red Hat Enterprise Linux Server and the Scalable File System Add-on, which are supported solely in connection with the use of the respective Red Hat Storage Subscription. Red Hat Gluster Storage Module does not include a Red Hat Enterprise Linux Software Subscription which must be purchased separately. (collectively ' Storage Node Use Case ') |
+| Red Hat Ceph Storage for Red Hat OpenStack on OpenShift | Socket            | Storage Node Use Case                                                                                                                                                                                                                                                                                                                                                             |
+| Red Hat Ceph Storage Pre-Production                     | Physical Node     | These Pre-Production Subscriptions are subject to Red Hat Storage Node Use Case, provided that Support is only provided for Pre-Production Purposes (defined below).*                                                                                                                                                                                                             |
+
+* ' Pre-Production Purposes ' consists of assistance with issues relating to the installation, configuration, administrative tasks and basic trouble-shooting  of  the  Red  Hat  Ceph  Storage  or  Red  Hat  Gluster  Storage  Software  components  prior  to  deployment  in  a  production environment, but it does not include architectural design reviews or advice, advanced configuration topics, performance analysis or reviews. Note 1: Standard or Premium support levels are available for all Subscriptions listed in Table 1 above except for Red Hat Gluster Storage Pre-Production and Red Hat Ceph Storage Pre-Production. Red Hat Gluster Storage Pre-Production and Red Hat Ceph Storage PreProduction only provide Standard support level.

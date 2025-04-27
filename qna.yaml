@@ -1,0 +1,202 @@
+version: 3
+domain: red_hat_subscriptions
+created_by: Stefan Bergstein
+seed_examples:
+  - context: |
+      Basis of the Fees. While you have a Subscription entitling you to receive Subscription Services for
+      a Red Hat Product, you are required to purchase the applicable Subscriptions in a quantity equal to
+      the total number and capacity of Units for that Subscription from the commencement of your use or deployment
+      of such Subscription or a part thereof. For purposes of counting Units, Units include non-Red Hat products
+      if you are using Subscription Services to support or maintain such non-Red Hat products. The fees are for
+      Subscription Services; there are no fees associated with the Red Hat Software licenses. An instance of a
+      Red Hat Universal Base Image by itself (e.g., not combined or used with Red Hat Subscriptions) is not
+      considered a Unit unless such instance receives or uses Subscription Services.
+    questions_and_answers:
+      - question: |
+          How should you determine the number of Subscriptions to purchase?
+        answer: |
+          You must purchase Subscriptions in a quantity equal to the total number and capacity of Units being used.
+      - question: |
+          Are non-Red Hat products counted as Units for Subscription purposes?
+        answer: |
+          Yes, non-Red Hat products are counted as Units if they are supported or maintained using Subscription Services.
+      - question: |
+          What are the Red Hat Subscription fees charged for?
+        answer: |
+          The fees are charged for Subscription Services, not for Red Hat Software licenses.
+      - question: |
+          Is an instance of a Red Hat Universal Base Image considered a Unit by itself?
+        answer: |
+          No, an instance of a Red Hat Universal Base Image is not considered a Unit unless it receives or uses Subscription Services.
+  - context: |
+      CPUs, Cores, Sockets and AI Accelerators. For Units, and the capacities associated with Units,
+      that are based on processors running the Software (such as Physical Nodes, Virtual Nodes, CPU,
+      Cores, and AI Accelerators), you are required to purchase Subscriptions that match the type of
+      processor running such Software. For example, if you are running OpenShift AI on an AI Accelerator,
+      you are required to purchase an equivalent number of AI Accelerator based Subscriptions.
+      Subscriptions that do not specify a processor type are based on x86 processors.
+    questions_and_answers:
+      - question: |
+          What must be purchased to match the type of processor running the Software?
+        answer: |
+          Subscriptions matching the processor type must be purchased.
+      - question: |
+          What types of units are mentioned that are based on processors running the Software?
+        answer: |
+          Physical Nodes, Virtual Nodes, CPUs, Cores, and AI Accelerators are mentioned.
+      - question: |
+          What is required when running OpenShift AI on an AI Accelerator?
+        answer: |
+          An equivalent number of AI Accelerator-based Subscriptions must be purchased.
+      - question: |
+          What are subscriptions based on if they do not specify a processor type?
+        answer: |
+          They are based on x86 processors.
+  - context: |
+      For AI Products you may input questions or prompts into an interface (Input).
+      The Input is passed to a large language model (LLM) that provides responses or suggestions (Output).
+      The Output may require additional modifications to be useful and any such modifications are "Modified Output".
+      Red Hat does not claim any intellectual property rights with respect to Input, Output, or Modified Output.
+      Your use of Output and Modified Output is at your discretion and Red Hat makes no warranties or guarantees
+      with respect to Output or Modified Output. You are responsible for ensuring your use of any LLM or other
+      AI model complies with any applicable laws and regulations.
+    questions_and_answers:
+      - question: |
+          What term is used when changes are made to the Output from an AI Product?
+        answer: |
+          When changes are made to the Output, it is referred to as Modified Output.
+      - question: |
+          Does Red Hat claim intellectual property rights over Input, Output, or Modified Output?
+        answer: |
+          No, Red Hat does not claim any intellectual property rights over Input, Output, or Modified Output.
+      - question: |
+          Who is responsible for ensuring compliance with applicable laws when using Output or Modified Output?
+        answer: |
+          The responsibility for compliance with applicable laws and regulations lies with the user of the Output or Modified Output.
+      - question: |
+          Does Red Hat guarantee the accuracy or usefulness of the Output or Modified Output?
+        answer: |
+          No, Red Hat makes no warranties or guarantees regarding the Output or Modified Output.
+
+  - context: |
+      Red Hat Product: Red Hat Enterprise Linux Server
+      Unit of Measure: Physical Node or Virtual Nodes
+      Capacity: Socket-pair for each Physical Node	or 2 Virtual Nodes
+    questions_and_answers:
+      - question: |
+          What is the unit of measure for Red Hat Enterprise Linux?
+        answer: |
+          Physical Node or Virtual Nodes
+      - question: |
+          How is capacity measured for a Physical Node?
+        answer: |
+          By socket-pair for each Physical Node.
+      - question: |
+          How is capacity measured for Virtual Nodes?
+        answer: |
+          By 2 Virtual Nodes.
+      - question: |
+          If a server has one socket-pair, how many Physical Nodes does it represent for licensing?
+        answer: |
+          One Physical Node.
+  - context: |
+      Red Hat Product: Red Hat OpenShift Platform (Bare Metal Node)
+      Unit of Measure: Physical Node
+      Capacity for Socket-based SKUs: Socket-pair with up to 128 Cores
+    questions_and_answers:
+      - question: |
+          What is the unit of measure for the Red Hat OpenShift Platform (Bare Metal Node)?
+        answer: |
+          The unit of measure is a Physical Node.
+      - question: |
+          For socket-based SKUs, how many sockets are paired together?
+        answer: |
+          A socket-pair is used for socket-based SKUs.
+      - question: |
+          What is the maximum number of cores supported for a socket-pair in this SKU?
+        answer: |
+          The socket-pair supports up to 128 cores.
+      - question: |
+          Is the Red Hat OpenShift Platform in this case deployed on virtual machines or bare metal?
+        answer: |
+          It is deployed on bare metal.
+  - context: |
+      The Red Hat Software is governed by the perpetual End User and Free and Open Source License Agreements
+      set forth at https://www.redhat.com/en/about/eulas.  Subscription Services are term-based and will expire if not renewed.
+      Nothing in this Agreement is intended to limit your rights to software code under the terms of a free and open source software license,
+      including your rights to use, copy, modify and distribute Software in accordance with such licenses.
+      Engaging in Unauthorized  Subscription  Services  Use  is  a  breach  of  this  Agreement  but  does  not  affect
+      your  rights  under  the  free  and  open  source software  licenses  that  govern  the  Software.
+      Upon  termination  or  expiration  of  this  Agreement,  you  will  no  longer  have  access  to  future Software  Maintenance
+      and  other  Subscription  Services,  but  you  will  continue  to  have  all  of  your  rights  under  the  free  and
+      open  source software licenses.
+    questions_and_answers:
+      - question: |
+          What governs the use of Red Hat Software?
+        answer: |
+          The use of Red Hat Software is governed by the perpetual End User and Free and Open Source License Agreements
+          found at https://www.redhat.com/en/about/eulas.
+      - question: |
+          What happens to Subscription Services if they are not renewed?
+        answer: |
+          Subscription Services are term-based and will expire if not renewed.
+      - question: |
+          Does this Agreement limit your rights under free and open source software licenses?
+        answer: |
+          No, nothing in the Agreement is intended to limit your rights to use, copy, modify, and distribute software under free and open source software licenses.
+      - question: |
+          What are the consequences of engaging in Unauthorized Subscription Services Use?
+        answer: |
+          Engaging in Unauthorized Subscription Services Use is a breach of the Agreement, but it does not affect your rights under free and open source software licenses.
+      - question: |
+          What happens to your rights to the software after the termination or expiration of the Agreement?
+        answer: |
+          After termination or expiration, you lose access to future Software Maintenance and Subscription Services, but you retain all rights under the free and open source software licenses.
+  - context: |
+      Red Hat OpenShift includes Red Hat OpenShift Virtualization which is designed to run and manage virtual machine instances.
+      Red Hat OpenShift Virtualization is supported only when Red Hat OpenShift is installed on the bare metal server and is
+      not installed within a virtual machine. The included Red Hat Enterprise Linux software is supported solely when used as
+      the guest operating system within virtual machines hosted on Red Hat OpenShift Virtualization,
+      but not priced or supported when hosted on Red Hat OpenShift Virtualization Engine.
+    questions_and_answers:
+      - question: |
+          What is Red Hat OpenShift Virtualization designed for?
+        answer: |
+          Red Hat OpenShift Virtualization is designed to run and manage virtual machine instances.
+      - question: |
+          When is Red Hat OpenShift Virtualization supported?
+        answer: |
+          It is supported only when Red Hat OpenShift is installed on a bare metal server, not within a virtual machine.
+      - question: |
+          How is Red Hat Enterprise Linux supported in the context of Red Hat OpenShift Virtualization?
+        answer: |
+          Red Hat Enterprise Linux is supported solely as the guest operating system within virtual machines hosted on Red Hat OpenShift Virtualization.
+      - question: |
+          Is Red Hat Enterprise Linux supported when hosted on Red Hat OpenShift Virtualization Engine?
+        answer: |
+          No, it is not priced or supported when hosted on Red Hat OpenShift Virtualization Engine.
+      - question: |
+          Can Red Hat OpenShift Virtualization be installed within a virtual machine?
+        answer: |
+          No, it must be installed directly on a bare metal server to be supported.
+document_outline: |
+  This document, Product Appendix 1, outlines the Software and Support Subscriptions offered by Red Hat,
+  serving as an extension of their base agreement. It defines various Units used to measure software usage
+  and determine subscription fees, such as Cores, Sockets, and Nodes, explaining how these units apply to
+  different products and deployments, including those on public clouds. The appendix specifies Supported
+  Use Cases for each subscription, detailing the environments and scenarios where technical support is provided
+  and clarifying the distinction between Development Use and Production Use. Additionally, it describes
+  the various Support options available, including different Service Levels and specialized support offerings
+  like Technical Account Management and Developer Support, while also outlining the limitations of these
+  services and terms related to using Red Hat's Cloud Access program and AI Products.
+document:
+  repo: https://github.com/stefan-bergstein/backToTheFuture.git
+  commit: 8bd9220c616afe24b9673d94ec1adce85320809c
+  patterns:
+    - Appendix-1-NA-English-20250217-part-1.md
+    - Appendix-1-NA-English-20250217-part-2.md
+    - Appendix-1-NA-English-20250217-part-3.md
+    - Appendix-1-NA-English-20250217-part-4.md
+    - Appendix-1-NA-English-20250217-part-5.md
+    - Appendix-1-NA-English-20250217-part-6.md
+    - Appendix-1-NA-English-20250217-part-7.md
